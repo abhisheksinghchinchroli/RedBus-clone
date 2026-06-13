@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        /*  Header Section   */
+        .box1 {
+            height: 77px;
+            width: 100%;
+            background-color: #d84e55;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .box1 img {
+            width: 64px;
+            margin: 20px 0px 0px 200px;
+            position: fixed;
+        }
+
+        .box2 p {
+            color: white;
+            font-size: 16px;
+            position: fixed;
+            z-index: 2;
+            margin: 17px 0px 0px 297px;
+            height: 60px;
+            padding: 13px 0px 0px 0px;
+        }
+
+        .box3 p.active {
+            color: white;
+            font-size: 16px;
+            position: fixed;
+            z-index: 2;
+            font-weight: bold;
+            margin: 17px 0px 0px 421px;
+            height: 60px;
+            padding: 13px 0px 0px 0px;
+        }
+
+        .box3 .hr {
+            height: 3px;
+            width: 65px;
+            background-color: white;
+            margin: 74px 0px 0px 415px;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .help {
+            height: 40px;
+            width: 74px;
+            position: fixed;
+            border-radius: 5px 5px 5px 5px;
+            cursor: pointer;
+            margin: 22px 0px 0px 1173px;
+            position: fixed;
+            z-index: 2;
+
+        }
+
+        .help img {
+            height: 25px;
+            width: 25px;
+            margin: 7px 0px 0px 5px;
+        }
+
+        .help p {
+            margin: 9px 0px 0px 41px;
+            font-size: 15px;
+            color: white;
+        }
+
+        .account {
+            height: 29px;
+            width: 47px;
+            position: fixed;
+            cursor: pointer;
+            margin: 30px 0px 0px 1285px;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .account img {
+            width: 24px;
+        }
+
+
+        .account .dropdown {
+            margin: -6px 0px 0px -10px;
+            background-color: #d84e55;
+            height: 20px;
+            width: 18px;
+
+        }
+
+        .dropdown .dropdown-menu {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .dropdown-menu li {
+            height: 36px;
+            margin: 5px 0px 0px 0px;
+
+        }
+
+        .dropdown ul {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .btn:focus {
+            box-shadow: none;
+            color: white;
+
+        }
+
+
+        .btn {
+            color: white;
+
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        /* Banner Section  */
+        .box4 {
+            margin: 71px 0px 0px 0px;
+        }
+
+        .box4 img {
+            border-radius: 0px 0px 50px 50px;
+        }
+
+        .box5 {
+            margin: -527px 0px 0px 0px;
+            border-radius: 0px 0px 50px 50px;
+            height: 527px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            opacity: 0.7;
+        }
+
+        .box5 p {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 20px 0px 0px 200px;
+        }
+
+        .box6 {
+            height: 250px;
+            width: 1228px;
+            border-radius: 75px 75px 75px 75px;
+            margin: -279px 0px 0px 149px;
+            position: absolute;
+            background: rgba(92, 92, 92, .48);
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .24);
+            backdrop-filter: blur(25px);
+            opacity: 1;
+        }
+
+        .box6a {
+            height: 40px;
+            width: 199px;
+            margin: 32px 0px 0px 312px;
+            background-color: white;
+            border-radius: 25px 25px 25px 25px;
+        }
+
+        .box6a p {
+            color: #1d1d1d;
+            font-weight: bold;
+            padding: 5px 0px 0px 14px;
+        }
+
+        .box6b {
+            height: 40px;
+            width: 199px;
+            margin: -40px 0px 0px 525px;
+            background-color: white;
+            border-radius: 25px 25px 25px 25px;
+        }
+
+        .box6b p {
+            color: #1d1d1d;
+            font-weight: bold;
+            padding: 5px 0px 0px 14px;
+        }
+
+        .box6c {
+            height: 40px;
+            width: 199px;
+            margin: -40px 0px 0px 740px;
+            background-color: white;
+            border-radius: 25px 25px 25px 25px;
+        }
+
+        .box6c p {
+            color: #1d1d1d;
+            font-weight: bold;
+            padding: 5px 0px 0px 14px;
+        }
+
+
+        /* From To Search Box  */
+        .box7 {
+            height: 101px;
+            width: 976px;
+            background-color: white;
+            margin: -162px 0px 0px 184px;
+            position: relative;
+            border-radius: 30px 0px 0px 30px;
+        }
+
+        .box7 input {
+            height: 100px;
+            outline: none;
+            width: 238px;
+            border-radius: 30px 0px 0px 30px;
+            border: none;
+            cursor: pointer;
+
+
+        }
+
+        .box7 input::placeholder {
+            color: #1d1d1d;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .box7a p {
+            margin: -93px 0px 0px 675px;
+            position: relative;
+        }
+
+        .box7a input[type="checkbox"] {
+            height: 27px;
+            accent-color: #d84e55;
+            margin: -50px 0px 0px 796px;
+            position: absolute;
+
+        }
+
+
+
+        .box8 button {
+            height: 101px;
+            width: 181px;
+            border-radius: 0px 30px 30px 0px;
+            background-color: #d84e55;
+            margin: -101px 0px 0px 1160px;
+            position: absolute;
+            border: none;
+        }
+
+        .box8 h4 {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 4px 0px 0px 5px;
+        }
+
+        /* vertical line */
+        .box9 {
+            background-color: #d9d3d3;
+            height: 100px;
+            width: 1px;
+            margin: -100px 0px 0px 416px;
+            position: absolute;
+        }
+
+        .box10 {
+            background-color: #d9d3d3;
+            height: 100px;
+            width: 1px;
+            margin: -100px 0px 0px 660px;
+            position: absolute;
+        }
+
+        .box10a {
+            background-color: #d9d3d3;
+            height: 100px;
+            width: 1px;
+            margin: -100px 0px 0px 832px;
+            position: absolute;
+        }
+
+        /* Search Box Icons */
+
+        /* left rightarrow */
+
+        .box11 {
+            margin: -70px 0px 0px 492px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+
+
+        .box11 img {
+            height: 51px;
+            width: 48px;
+            margin: -3px 0px 0px -100px;
+        }
+
+        /* bus get in  */
+        .box12 {
+            margin: -67px 0px 0px 207px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .box12 img {
+            height: 31px;
+            width: 43px;
+        }
+
+        /* bus get out  */
+        .box13 {
+            margin: -69px 0px 0px 452px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .box13 img {
+            height: 39px;
+            width: 36px;
+        }
+
+
+        /* Offers For You Section  */
+        .box14 {
+            max-width: 22rem;
+            min-width: 22rem;
+            height: 10rem;
+            background: #f8f4f4;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+            border-radius: 8px;
+            margin: 159px 0px 0px 203px;
+            cursor: pointer;
+        }
+
+        .box14 img {
+            width: 100px;
+            margin: 17px 0px 0px 11px;
+        }
+
+        .box15 {
+            max-width: 22rem;
+            min-width: 22rem;
+            height: 10rem;
+            background: #f8f4f4;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+            border-radius: 8px;
+            margin: -161px 0px 0px 585px;
+            cursor: pointer;
+        }
+
+        .box15 img {
+            width: 100px;
+            margin: 17px 0px 0px 11px;
+        }
+
+        .box16 {
+            max-width: 22rem;
+            min-width: 22rem;
+            height: 10rem;
+            background: #f8f4f4;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+            border-radius: 8px;
+            margin: -161px 0px 0px 968px;
+            cursor: pointer;
+        }
+
+        .box16 img {
+            width: 100px;
+            margin: 17px 0px 0px 11px;
+        }
+
+
+        /* first container  */
+        .box17 {
+            height: 19.625rem;
+            background: #f8f4f4;
+            margin: 50px 0px 0px 0px;
+        }
+
+
+        .download {
+            margin: 40px 0px 0px 0px;
+            height: 45.188rem;
+        }
+
+        .step1 {
+            height: 4.5rem;
+            width: 500px;
+            border-radius: 50px 50px 50px 50px;
+            margin: 100px 0px 0px 204px;
+            background-color: #3e3e52;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+
+        .step2 {
+            height: 4.5rem;
+            width: 500px;
+            border-radius: 50px 50px 50px 50px;
+            margin: 25px 0px 0px 204px;
+            background-color: white;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+
+        .step3 {
+            height: 4.5rem;
+            width: 500px;
+            border-radius: 50px 50px 50px 50px;
+            margin: -380px 0px 0px 204px;
+            background-color: white;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+
+        .step4 {
+            height: 4.5rem;
+            width: 500px;
+            border-radius: 50px 50px 50px 50px;
+            margin: 25px 0px 0px 204px;
+            background-color: white;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+
+        .step5 {
+            height: 4.5rem;
+            width: 500px;
+            border-radius: 50px 50px 50px 50px;
+            margin: 25px 0px 0px 204px;
+            background-color: white;
+            border: 1px solid gray;
+            cursor: pointer;
+        }
+
+
+        .Frequently .hrline {
+            height: 0px;
+            width: 1130px;
+            margin: 30px 0px 0px 215px;
+            background-color: #d9d3d3;
+
+        }
+
+        .footer {
+            background-color: #1b2230;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 43px 10px 0px 46px;
+            height: 320px;
+            margin-top: 100px;
+        }
+
+        .footer h5 {
+            color: #7e7e8c;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            display: block;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .footer .description {
+            font-size: 14px;
+            margin: 0px 100px 0px 0px;
+            line-height: 1.5;
+        }
+
+        .footer .logo {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+
+        .footer .copyright {
+            font-size: 12px;
+            margin: 20px 100px 0px 0px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Header Section  -->
+    <div class="box1">
+        <a href="home.html"><img src="	https://www.redbus.in/railways/public/images/rb_logo.svg" alt="" class="img"></a>
+
+
+
+        <a href="home.html">
+            <div class="box2">
+                <p>Bus Tickets</p>
+            </div>
+        </a>
+
+        <a href="train.html">
+            <div class="box3">
+                <p class="active">redRail</p>
+                <div class="hr"></div>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="help"><img src="https://www.redbus.in/railways/public/images/help.svg" alt="">
+                <p>Help</p>
+            </div>
+        </a>
+
+
+        <div class="account">
+
+            <div class="dropdown">
+
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" style=" border: none;">
+                    <img src="https://www.redbus.in/railways/public/images/user_profile.svg" alt=""
+                        style="margin: 0px 0px 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SignUp / Signin</a></li>
+                    <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Banner Section  -->
+    <div class="box4"><img src="	https://www.redbus.in/railways/public/images/home_banner.svg" alt=""></div>
+
+    <div class="box5">
+        <p><span style="text-decoration: underline; color: #9f9eff;">Home</span>&nbsp;&nbsp;<span
+                style="color: gray;">></span>&nbsp;&nbsp;<span style="color: white;">Trains</span></p>
+        <img src="https://www.redbus.in/railways/public/images/rails_logo_white.svg" alt=""
+            style="margin-left: 716px; width: 87px; margin-top: 16px;">
+        <p style="margin: -18px 0px 0px 224px; color: white; font-size: 50px;">redRail: Train Ticket Booking</p>
+        <p style="color: white; margin: -20px 0px 0px 476px; font-size: 20px; font-weight: 600;">Authorised by IRCTC</p>
+
+
+    </div>
+    <div class="box6">
+        <div class="box6a">
+            <p>Book Train tickets <a href="train.html"><input type="radio" checked="checked"
+                        style=" height: 18px; width: 18px; margin: 5px 0px 0px 19px; accent-color: #d84e55; position: absolute;"></a>
+            </p>
+        </div>
+        <div class="box6b">
+            <p>Check PNR Status<input type="radio"
+                    style=" height: 18px; width: 18px; margin: 5px 0px 0px 20px; accent-color: #d84e55; position: absolute;">
+            </p>
+        </div>
+        <div class="box6c">
+            <p>Live Train Status<input type="radio"
+                    style=" height: 18px; width: 18px; margin: 5px 0px 0px 30px; accent-color: #d84e55; position: absolute;">
+            </p>
+        </div>
+    </div>
+
+
+    <!-- From To Search Box  -->
+    <div class="box7">
+        <form>
+            <input type="text" placeholder="From" style="padding: 0px 0px 0px 74px;"><input type="text" placeholder="To"
+                style="padding: 0px 0px 0px 74px;">
+            <input type="date" placeholder="" style="width: 168px; padding: 0px 27px 0px 19px;">
+        </form>
+        <div class="box7a">
+            <p><span style="color: #3e3e52; font-size: 14px;">Opt-in for</span> <br><span
+                    style="color: #86003e; font-weight: bold; font-size: 23px;">Free
+                    Cancellation</span><br><span style="color: #3e3e52; font-size: 13px; font-weight: bold;">₹0
+                    cancellation fee • Instant refund</span></p>
+
+            <input type="checkbox" class="checkbox-conatiner">
+        </div>
+    </div>
+
+    <div class="box8"><button>
+            <h4>Search Trains</h4>
+        </button></div>
+
+
+    <!-- vertical line -->
+    <div class="box9"></div>
+    <div class="box10"></div>
+    <div class="box10a"></div>
+
+    <!-- Search Box Icons -->
+
+    <!-- left rightarrow  -->
+    <div class="box11"><img src="https://www.redbus.in/railways/public/images/exchange_station.svg" alt=""></div>
+
+    <!-- bus get in  -->
+    <div class="box12"><img src="trainin.png" alt=""></div>
+
+    <!-- bus get out  -->
+    <div class="box13"><img src="trainout.png" alt=""></div>
+
+    <!-- Offers For You Section  -->
+    <p style="font-weight: 400;
+    font-size: 2rem;
+    color: var(--clr-gray-2);
+    margin: 79px 0px 0px 658px; position: absolute;">Offers for you</p>
+    <div class="box14">
+        <img src="https://st.redbus.in/EveryonesChristmasSaleRailProduct.jpg" alt="">
+        <p style="color: #1034d9; font-weight: 700; font-size: 12px; margin: 12px 0px 0px 26px;">view details</p>
+        <p style="font-size: 14px; font-weight: 700; color: #3e3e52; margin: -133px 0px 0px 137px;">Get Rs 100 off on
+            train <br>tickets</p>
+        <p style="font-size: 14px; color: #3e3e52; margin: 11px 0px 0px 137px;">Offer valid till : 01 Feb</p>
+        <p style="font-size: 12px;
+        padding: 6px 8px 4px;
+        background: #e5ebf8;
+        border: 1px dashed #3e3e52;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 61px; margin: 16px 0px 0px 133px;">FESTIVE</p>
+    </div>
+
+
+
+    <div class="box15">
+        <img src="https://st.redbus.in/Images/MWeb8080ICICIcopy%202.png" alt="">
+        <p style="color: #1034d9; font-weight: 700; font-size: 12px; margin: 12px 0px 0px 26px;">view details</p>
+        <p style="font-size: 14px; font-weight: 700; color: #3e3e52; margin: -133px 0px 0px 137px;">Get Rs 60 off on
+            train <br>tickets</p>
+        <p style="font-size: 14px; color: #3e3e52; margin: 11px 0px 0px 137px;">Offer valid till : 01 Feb</p>
+        <p style="font-size: 12px;
+        padding: 6px 8px 4px;
+        background: #e5ebf8;
+        border: 1px dashed #3e3e52;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 72px; margin: 16px 0px 0px 133px;">SUPERB60</p>
+    </div>
+
+
+    <div class="box16">
+        <img src="https://st.redbus.in/Images/99/rail/Piggybank.png" alt="">
+        <p style="color: #1034d9; font-weight: 700; font-size: 12px; margin: 12px 0px 0px 26px;">view details</p>
+        <p style="font-size: 14px; font-weight: 700; color: #3e3e52; margin: -133px 0px 0px 137px;">Get Rs 60 off on
+            train <br>tickets</p>
+        <p style="font-size: 14px; color: #3e3e52; margin: 11px 0px 0px 137px;">Offer valid till : 01 Feb</p>
+        <p style="font-size: 12px;
+        padding: 6px 8px 4px;
+        background: #e5ebf8;
+        border: 1px dashed #3e3e52;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 55px; margin: 16px 0px 0px 133px;">NOFEE</p>
+    </div>
+
+
+    <!-- first container  -->
+    <div class="box17">
+        <p style="font-size: 1.75rem;
+    font-weight: 400; color: #d84e55; padding: 29px 0px 0px 536px;">IRCTC authorised Ticket Booking</p>
+        <p style="font-weight: 400;
+    font-size: 1rem; padding: 0px 0px 0px 274px; color: #3e3e52;">Book IRCTC Train Tickets on redRail and enjoy simple
+            & superfast booking process with no service fee + no payment gateway charge.</p>
+        <p style="padding: 36px 0px 0px 254px;"><span style="color: #3e3e52; font-weight: bold; ">IRCTC Authorised
+                <br>Partner</span><br>
+            Book your train <br> tickets with <br>confidence</p>
+        <img src="https://st.redbus.in/Images/redrail/partner_v2.svg" alt=""
+            style="margin: -94px 0px 0px 192px; position: absolute;">
+
+
+
+        <p style="margin: -124px 0px 0px 527px; position: absolute;"><span
+                style="font-weight: bold; color: #3e3e52;">Instant refunds on UPI <br>payments</span><br>
+            Get Instant Refunds on <br> your UPI payments
+        </p>
+        <img src="https://st.redbus.in/Images/redrail/refunds_v2.svg" alt=""
+            style="position: absolute; margin: -94px 0px 0px 466px;">
+
+
+        <p style="margin: -110px 0px 0px 819px; position: absolute;"><span style="font-weight: bold;">Hassle free
+                customer care</span><br>
+            Get dedicated customer <br>support for all your queries</p>
+        <img src="https://st.redbus.in/Images/redrail/support_v2.svg" alt=""
+            style="position: absolute; margin: -98px 0px 0px 761px;">
+
+
+
+        <p style="color: #3e3e52; font-weight: bold; margin: -96px 0px 0px 1152px; position: absolute;">Fastest
+            confirmed <br> booking experience</p>
+        <img src="https://st.redbus.in/Images/redrail/booking_v2.svg" alt=""
+            style="position: absolute; margin: -95px 0px 0px 1095px;">
+    </div>
+
+
+
+    <div class="download">
+        <p style="font-weight: 400; font-size: 2rem; text-align: center;">Download App</p>
+        <div class="step1">
+            <p style="color: white; padding: 22px 0px 0px 43px;"><span style="color: #d84e55;">Step : 1</span>
+                Visit redRail and Choose Journey Date</p>
+        </div>
+
+        <div class="step2">
+            <p style="color: #1d1d1d; padding: 22px 0px 0px 43px;"><span style="color: #d84e55;">Step : 2</span>
+                Select Class and Look for Available Trains</p>
+        </div>
+    </div>
+
+    <div class="step3">
+        <p style="color: #1d1d1d; padding: 22px 0px 0px 43px;"><span style="color: #d84e55;">Step : 3</span>
+            Add IRCTC User ID and Passenger Information</p>
+    </div>
+
+
+    <div class="step4">
+        <p style="color: #1d1d1d; padding: 22px 0px 0px 43px;"><span style="color: #d84e55;">Step : 4</span>
+            Choose a Method for Payment</p>
+    </div>
+
+    <div class="step5">
+        <p style="color: #1d1d1d; padding: 22px 0px 0px 43px;"><span style="color: #d84e55;">Step : 5</span>
+
+            Enter IRCTC Password to Confirm Booking</p>
+    </div>
+    </div>
+
+    <img src="	https://www.redbus.in/railways/public/images/mob2_cont.avif" alt=""
+        style="margin: -535px 0px 0px 700px;">
+
+
+
+
+
+    </div>
+    </div>
+    <div class="Frequently">
+        <h1 style="font-weight: 400;font-size: 2rem; padding: 100px 0px 0px 210px;">Frequently Asked Questions</h1>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">How can
+                I complete an online train
+                ticket booking with redRails?</span><br><br>
+            Booking a train ticket online can be completed with ease in just a few simple steps. If you’re on the app,
+            first click on the “redRails” icon that’s displayed on your <br>screen. Enter the source and destination
+            locations along with the date of travel. Once done, a list of trains operating on your route will be
+            displayed. Select the <br>train and class of your choice, select the boarding and destination stations,
+            enter
+            the details of the passenger and complete the payment. You can download the <br>ticket and the invoice once
+            your
+            payment has been processed.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Do I
+                need to make an account to make an IRCTC train ticket booking online?</span><br><br>
+            Yes, and this has its advantages. This would help expedite the booking process when you have to enter
+            details about the passenger and while completing the <br>payment process.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"> <span style="color: #465986; font-weight: bold;">How is
+                redRails connected to redBus?</span><br><br>
+            redRails is a new product that’s offered by redBus. Utilising its massive successful experience in the bus
+            industry, redBus aims to attain the same success in the <br>train industry as well. A customer can view,
+            book,
+            and complete their payment of train tickets on the redBus app or page by clicking on the “redRails” option
+            <br>
+            that’s provided.
+        </p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">How to
+                cancel a train ticket booked through redRails?</span><br><br>
+            Cancelling an online train ticket booking through redRails can be done as easily as booking a train ticket.
+            When you view the details of your train ticket booking <br>on the app or website, you are presented with the
+            option to either modify your booking or cancel the ticket. Click on the option that best suits your travel
+            needs. <br> A small cancellation fee might be charged based on the timing of your cancellation request.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"> <span style="color: #465986; font-weight: bold;">How do
+                I pay for my online train ticket booking that is made through redRails?</span><br><br>
+            You can complete your online train ticket booking by using any of the variety of payment options that are
+            available at your disposal. Customers can use any <br>amount that’s remaining in their redBus wallet, credit
+            or
+            debit cards, Wallets such as Amazon Pay or through UPI payment gateways such as GooglePay,<br> PhonePe, etc.
+            Payments made online on redRails are safe and secure and eliminate the need to wait in a queue.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Are
+                there any cancellation charges levied when a train ticket is cancelled?</span><br><br>
+            Yes, there are. Depending on when the cancellation was initiated, an amount might get deducted to compensate
+            any losses incurred by IRCTC, Railways, etc. <br> Customers can opt for the “Free Cancellation” policy by
+            paying
+            an extra amount at the time of booking. This comes in handy when travel plans are not concrete.</p>
+
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">How
+                many people can I book a seat on a train with a single train ticket booking?</span><br><br>
+            Customers can book a maximum of 6 seats on a single train ticket booking that’s made through redRails.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">What
+                are some of the advantages of booking a train ticket with redRails?</span><br><br>
+            One of the key advantages of making an online train ticket booking with redRails is convenience. In the
+            current environment where safety is a priority, customers <br>can view, select, and make their payments
+            online from the comfort of their homes. redRails displays vital information pertaining to their train
+            journey.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Can I
+                check the PNR status of the train on redRails?</span><br><br>
+            Yes, you can. Simply click on the “PNR Status” button that’s available and enter the details requested to
+            view the updated PNR status of the train on your <br>upcoming journey. You can even track the train by
+            clicking
+            on the “Live Train Status” button.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Do I
+                get the option to select my seat or berth on the train?</span><br><br>
+            Yes, you can. While entering the details of the passenger, you can select the berth of your choice. If there
+            are multiple seats booked through one booking, you <br>can select a berth for each passenger individually.
+            You
+            also get the option to make a reservation preference such as booking all berths on one coach, if there are
+            <br>
+            one or two lower berths, and more.
+        </p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Should
+                I book my train ticket in advance?</span><br><br>
+            It is advisable to complete your online train ticket booking through redRails in advance as this would
+            ensure that you have more choices when it comes to the <br>trains operating on your route as well as ensures
+            that you have more options related to selecting the berth of your choice.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"> <span style="color: #465986; font-weight: bold;">Where
+                can I view the train ticket that I have booked through redRails?</span><br><br>
+            The train ticket will be displayed on the website, app, and will also be available in the registered email
+            that has been used.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Can I
+                book a train ticket through the Tatkal Quota?</span><br><br>
+            Yes, you can though this is quota is subject to seat availability. With the convenience of viewing updated
+            trains and their berth availability, it is advisable to <br>complete your online train ticket booking
+            earlier
+            through redRails.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">Are
+                there any offers that can be availed when making an online train ticket booking on
+                redRails?</span><br><br>
+            Yes. redRails offers are provided on a regular basis and the offer details can be found on the redRails
+            homepage or on the app. Enter the offer code at the time of <br>making your payment and avail a discount on
+            your
+            train tickets online.</p>
+        <div class="hrline">
+            <hr>
+        </div>
+        <p style="color: #3e3e52; padding: 50px 0px 0px 210px;"><span style="color: #465986; font-weight: bold;">If I
+                wasn’t able to cancel my train ticket but I ended up missing the train, can I file a TDR through
+                redRails?</span><br><br>
+            Yes, you most certainly can. You can do so on the booking confirmation page. Select the reason for filing a
+            TDR. A GC/EFT certificate might be needed and this <br>can be obtained at the departure station or from the
+            TT.
+        </p>
+        <div class="hrline">
+            <hr>
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- About Redbus -->
+                <div class="col-md-2" style="margin: 0px -55px 0px 80px;">
+                    <h5>About Redbus</h5>
+                    <a href="aboutus.html">About us</a>
+                    <a href="contactus.html">Contact us</a>
+                    <a href="#">Mobile Version</a>
+                    <a href="#">redBus on Mobile</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Values</a>
+                </div>
+
+                <!-- Info -->
+                <div class="col-md-2">
+                    <h5>Info</h5>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Bus Operator Registration</a>
+                    <a href="#">Agent Registration</a>
+                    <a href="#">Insurance Partner</a>
+                    <a href="#">User Agreement</a>
+                </div>
+
+                <!-- Global Sites -->
+                <div class="col-md-2">
+                    <h5>Global Sites</h5>
+                    <a href="#">India</a>
+                    <a href="#">Singapore</a>
+                    <a href="#">Malaysia</a>
+                    <a href="#">Indonesia</a>
+                    <a href="#">Peru</a>
+                    <a href="#">Columbia</a>
+                </div>
+
+                <!-- Our Partners -->
+                <div class="col-md-2" style="margin: 0px 0px 0px -55px;">
+                    <h5>Our Partners</h5>
+                    <a href="#">Goibibo Bus</a>
+                    <a href="#">Goibibo Hotels</a>
+                    <a href="#">Makemytrip Bus</a>
+                    <a href="#">Makemytrip Hotels</a>
+                </div>
+
+                <!-- Logo and Description -->
+                <div class="col-md-4" style="margin: 0px 0px 0px 30px ;">
+                    <img src="https://www.redbus.in/railways/public/images/rb_logo.svg" alt="redBus Logo" class="logo">
+                    <p class="description">
+                        redBus is the world's largest online bus ticket booking service trusted by over 8 million happy
+                        customers globally. redBus offers bus ticket booking through its website, iOS, and Android
+                        mobile apps for all major routes.
+                    </p>
+                    <p class="copyright">
+                        © 2025 Redbus India Private Limited (formerly known as 'Ibibo Group Private Limited').
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+
+
+
+</body>
+
+</html>

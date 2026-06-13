@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        /*  Header Section   */
+        .box1 {
+            height: 77px;
+            width: 100%;
+            background-color: #d84e55;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .box1 img {
+            width: 64px;
+            margin: 20px 0px 0px 200px;
+            position: fixed;
+        }
+
+        .box2 p {
+            color: white;
+            font-size: 16px;
+            position: fixed;
+            z-index: 2;
+            margin: 17px 0px 0px 297px;
+            height: 60px;
+            padding: 13px 0px 0px 0px;
+        }
+
+        .box3 p.active {
+            color: white;
+            font-size: 16px;
+            position: fixed;
+            z-index: 2;
+            font-weight: bold;
+            margin: 17px 0px 0px 421px;
+            height: 60px;
+            padding: 13px 0px 0px 0px;
+        }
+
+        .box3 .hr {
+            height: 3px;
+            width: 65px;
+            background-color: white;
+            margin: 74px 0px 0px 415px;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .help {
+            height: 40px;
+            width: 74px;
+            position: fixed;
+            border-radius: 5px 5px 5px 5px;
+            cursor: pointer;
+            margin: 22px 0px 0px 1173px;
+            position: fixed;
+            z-index: 2;
+
+        }
+
+        .help img {
+            height: 25px;
+            width: 25px;
+            margin: 7px 0px 0px 5px;
+        }
+
+        .help p {
+            margin: 9px 0px 0px 41px;
+            font-size: 15px;
+            color: white;
+        }
+
+        .account {
+            height: 29px;
+            width: 47px;
+            position: fixed;
+            cursor: pointer;
+            margin: 30px 0px 0px 1285px;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .account img {
+            width: 24px;
+        }
+
+
+        .account .dropdown {
+            margin: -6px 0px 0px -10px;
+            background-color: #d84e55;
+            height: 20px;
+            width: 18px;
+
+        }
+
+        .dropdown .dropdown-menu {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .dropdown-menu li {
+            height: 36x;
+            margin: 5px 0px 0px 0px;
+
+        }
+
+        .dropdown ul {
+            margin: 0px 0px 0px 0px;
+        }
+
+        .btn:focus {
+            box-shadow: none;
+            color: white;
+
+        }
+
+
+        .btn {
+            color: white;
+
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        /* Banner Section  */
+
+        .banner img {
+            height: 350px;
+            margin-top: 120px;
+            width: 100%;
+        }
+
+        .blackbox {
+            height: 350px;
+            width: 100%;
+            background-color: black;
+            opacity: 0.5;
+            margin: -349px 0px 0px 0px;
+        }
+
+        .blackshortbox {
+            height: 44px;
+            width: 100%;
+            background-color: black;
+            margin: -394px 0px 0px 0px;
+            position: absolute;
+        }
+
+        .blackshortbox p {
+            padding: 8px 0px 0px 200px;
+        }
+
+        .content {
+            margin: -527px 0px 0px 0px;
+            height: 527px;
+            width: 100%;
+            position: absolute;
+        }
+
+        .content p {
+            font-weight: bold;
+            font-size: 15px;
+            padding: 20px 0px 0px 200px;
+        }
+
+
+
+
+
+
+        .box6 {
+            margin: -205px 0px 0px 149px;
+            position: absolute;
+        }
+
+        .box6a {
+            height: 40px;
+            width: 199px;
+            margin: 32px 0px 0px 312px;
+            background-color: white;
+            border-radius: 25px 25px 25px 25px;
+        }
+
+        .box6a p {
+            color: #1d1d1d;
+            font-weight: bold;
+            padding: 5px 0px 0px 14px;
+        }
+
+        .box6b {
+            height: 40px;
+            width: 199px;
+            margin: -40px 0px 0px 525px;
+            background-color: white;
+            border-radius: 25px 25px 25px 25px;
+        }
+
+        .box6b p {
+            color: #1d1d1d;
+            font-weight: bold;
+            padding: 5px 0px 0px 14px;
+        }
+
+        .box6c {
+            height: 40px;
+            width: 199px;
+            margin: -40px 0px 0px 740px;
+            background-color: white;
+            border-radius: 25px 25px 25px 25px;
+        }
+
+        .box6c p {
+            color: #1d1d1d;
+            font-weight: bold;
+            padding: 5px 0px 0px 14px;
+        }
+
+
+
+
+        .box6d input {
+            padding-left: 48px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 16px;
+            width: 950px;
+
+            line-height: 24px;
+            font-weight: 700;
+            background-color: white;
+            margin: -101px 0px 0px 174px;
+            font-weight: bold;
+            position: absolute;
+            border-radius: 8px 0 0 8px;
+            text-decoration: none;
+            outline: none;
+            border: none;
+        }
+
+
+        .box6e button {
+            padding: 15px 25px;
+            margin: -101px 0px 0px 1124px;
+            font-weight: 700;
+            width: 200px;
+            font-size: 16px;
+            line-height: 34px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #d84e55;
+            border: none;
+            border-radius: 0 8px 8px 0;
+            position: absolute;
+        }
+
+
+        /* First Container  */
+        .box7 {
+            background-color: #f3f4f9;
+            min-height: 1569px;
+            margin: 25px 0px 0px 0px;
+        }
+
+        .box7a {
+            position: relative;
+
+            height: 114px;
+            background: #fff;
+            border: 1px solid #b2b2b2;
+            border-radius: 8px;
+            width: 1119px;
+            margin: 30px 0px 0px 203px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Header Section  -->
+    <div class="box1">
+        <a href="home.html"><img src="	https://www.redbus.in/railways/public/images/rb_logo.svg" alt="" class="img"></a>
+
+
+
+        <a href="home.html">
+            <div class="box2">
+                <p>Bus Tickets</p>
+            </div>
+        </a>
+
+        <a href="train.html">
+            <div class="box3">
+                <p class="active">redRail</p>
+                <div class="hr"></div>
+            </div>
+        </a>
+
+        <a href="">
+            <div class="help"><img src="https://www.redbus.in/railways/public/images/help.svg" alt="">
+                <p>Help</p>
+            </div>
+        </a>
+
+
+        <div class="account">
+
+            <div class="dropdown">
+
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" style=" border: none;">
+                    <img src="https://www.redbus.in/railways/public/images/user_profile.svg" alt=""
+                        style="margin: 0px 0px 0px 0px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">SignUp / Signin</a></li>
+                    <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Banner Section  -->
+    <div class="banner">
+        <img src="https://www.redbus.in/railways/public/images/main-background.png" alt="">
+        <div class="blackbox"></div>
+        <div class="blackshortbox">
+            <p><span style="text-decoration: underline; color: #9f9eff;">Home</span>&nbsp;&nbsp;<span
+                    style="color: gray;">></span>&nbsp;&nbsp;<span
+                    style="color: #9f9eff; text-decoration: underline;">Trains</span>&nbsp;&nbsp;<span
+                    style="color: gray;">></span>&nbsp;&nbsp;<span style="color: white;">PNR STATUS</span></p>
+        </div>
+        <div class="content">
+            <img src="https://www.redbus.in/railways/public/images/rails_logo_white.svg" alt=""
+                style="margin-left: 925px; width: 70px; margin-top: 70px; position: absolute;">
+            <p style="margin: 181px 0px 0px 330px; color: white; font-size: 45px; position: absolute;">Check PNR Status
+            </p>
+            <p
+                style="color: white; margin: 250px 0px 0px 503px; font-size: 20px; font-weight: 600; position: absolute; ">
+                Authorised by IRCTC</p>
+            <img src="https://www.redbus.in/railways/public/images/irctc_logo_pnr.svg" alt=""
+                style="width: 40px; margin: 111px 0px 0px 644px;">
+
+        </div>
+    </div>
+
+
+
+    <div class="box6">
+        <div class="box6a">
+            <p>Book Train tickets <input type="radio" checked="checked"
+                        style=" height: 18px; width: 18px; margin: 5px 0px 0px 19px; accent-color: #d84e55; position: absolute;">
+            </p>
+        </div>
+        <div class="box6b">
+            <p>Check PNR Status <a href="chackpnrstatus.html"><input type="radio"
+                        style=" height: 18px; width: 18px; margin: 5px 0px 0px 20px; accent-color: #d84e55; position: absolute;"></a>
+            </p>
+        </div>
+        <div class="box6c">
+            <p>Live Train Status<input type="radio"
+                    style=" height: 18px; width: 18px; margin: 5px 0px 0px 30px; accent-color: #d84e55; position: absolute;">
+            </p>
+        </div>
+    </div>
+
+    <div class="box6d">
+        <input type="number" placeholder="Enter PNR Number">
+    </div>
+    <img src="https://www.redbus.in/railways/public/images/pnr_icon.svg" alt=""
+        style="margin: -80px 0px 0px 190px; position: absolute;">
+    <div class="box6e"><button>Check Status</button></div>
+
+
+    <!-- First Container  -->
+    <div class="box7">
+        <p style="padding: 33px 0px 0px 201px; font-weight: bold; font-size: 30px;">Top 10 Trains with Highest Waitlist
+            PNR</p>
+        <div class="box7a">
+            <p style="font-weight: bold; font-size: 1.125rem; padding: 10px 0px 0px 20px;">12295 SANGHAMITRA EXP</p><br>
+            <p style="font-weight: 700; font-size: 14px; color: #747474; margin: -34px 0px 0px 20px;">M&nbsp;
+                T&nbsp;
+                W&nbsp;
+                T&nbsp;
+                F&nbsp;
+                S&nbsp;
+                S</p>
+            <p style="font-weight: 500; font-size: 12px; color: #747474; padding: 10px 0px 0px 20px;">1A, 2A, 3A, SL</p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

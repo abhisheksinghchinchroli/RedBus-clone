@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email SMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+       /* Header section */
+       .box1 {
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 86px 34px rgba(0, 0, 0, 0.01), 0px 48px 29px rgba(0, 0, 0, 0.03), 0px 5px 12px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+        }
+
+        .rblogo {
+            height: 51px;
+            width: 82px;
+            cursor: pointer;
+            position: fixed;
+            margin: 25px 0px 0px 162px;
+
+        }
+
+        .vl {
+            border-left: 1.5px solid #d1cbcb;
+            height: 21px;
+            margin: 37px 0px 0px 301px;
+            position: fixed;
+            z-index: 2;
+
+        }
+
+        .box2 {
+            height: 74px;
+            width: 114px;
+            background-color: #d84e55;
+            border-radius: 10px 10px 10px 10px;
+            margin: 12px 0px 0px 339px;
+            position: fixed;
+            cursor: pointer;
+            z-index: 2;
+
+        }
+
+        .box2 img {
+            height: 22px;
+            width: 32px;
+            margin: 13px 0px 0px 40px;
+        }
+
+        .box2 p {
+            color: white;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin: 5px 0px 0px 22px;
+        }
+
+        .box3 {
+            height: 74px;
+            width: 114px;
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+            margin: 12px 0px 0px 470px;
+            position: fixed;
+            cursor: pointer;
+            z-index: 2;
+
+        }
+
+        .box3 img {
+            height: 22px;
+            width: 32px;
+            margin: 13px 0px 0px 40px;
+        }
+
+        .box3 p {
+            color: black;
+            font-family: sans-serif;
+            font-size: 14px;
+            margin: 5px 0px 0px 22px;
+        }
+
+        .box3:hover {
+            background-color: #f0f0f0;
+        }
+
+        .off {
+            height: 16px;
+            width: 47px;
+            background-color: #60b681;
+            color: white;
+            font-size: 11px;
+            border-radius: 5px 5px 5px 5px;
+            position: fixed;
+            margin: 14px 0px 0px 536px;
+            cursor: pointer;
+            z-index: 2;
+
+        }
+
+        .off p {
+            margin: 1px 0px 0px 5px;
+            font-family: sans-serif;
+        }
+
+        .help {
+            height: 40px;
+            width: 80px;
+            background-color: white;
+            position: fixed;
+            border-radius: 5px 5px 5px 5px;
+            cursor: pointer;
+            margin: 29px 0px 0px 980px;
+            z-index: 2;
+
+        }
+
+        .help:hover {
+            background-color: #f0f0f0;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .help img {
+            height: 25px;
+            width: 25px;
+            margin: 7px 0px 0px 5px;
+        }
+
+        .help p {
+            font-family: sans-serif;
+            margin: -24px 0px 0px 41px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .dropdown button {
+            margin: 28px 0px 0px 1090px;
+            position: fixed;
+            background-color: white;
+            width: 120px;
+            height: 40px;
+            text-align: end;
+            z-index: 2;
+
+        }
+
+        .dropdown button:hover {
+            background-color: #f0f0f0;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .dropdown-menu {
+            text-align: center;
+        }
+
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 1.25rem 1rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .btn-light:focus {
+            background-color: white;
+            box-shadow: none;
+        }
+
+        .dropdown ul {
+            border-radius: 20px 20px 20px 20px;
+            /* border: none; */
+            /* box-shadow: 0px 0px 10px gray; */
+        }
+
+        .dropdown li a {
+            border-radius: 0px 0px 7px 7px;
+
+        }
+
+        .language img {
+            height: 20px;
+            width: 20px;
+            margin: 38px 0px 0px 1099px;
+            position: fixed;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .account img {
+            height: 23px;
+            width: 23px;
+            margin: 37px 0px 0px 1251px;
+            position: fixed;
+            cursor: pointer;
+            z-index: 2;
+
+        }
+
+
+
+
+        .container {
+      position: relative;
+      top: 125px;
+      text-align: center;
+      width: 100%;
+      background: #fff;
+      padding: 20px 30px;
+    }
+
+    .heading {
+      font-size: 32px;
+      color: #333;
+      opacity: .8;
+      margin-bottom: 25px;
+      font-weight: 400;
+    }
+
+    .para {
+      font-size: 21px;
+      opacity: .8;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      margin: 0px 150px 0px 200px;
+      justify-content: center;
+    }
+
+    .form-group {
+      flex: 1 1 calc(50% - 10px);
+      text-align: left;
+    }
+
+    .form-group label {
+      font-size: 15px;
+      font-weight: 600;
+      color: #404040;
+      display: block;
+      margin-bottom: 5px;
+      margin-left: 20px;
+    }
+
+    .form-group input {
+      width: 73%;
+      padding: 11px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      margin: 0px 0px 0px 20px;
+      box-sizing: border-box;
+      font-weight: 400;
+      height: 50px;
+    }
+
+    .submit-btn {
+        height: 50px;
+    width: 125px;
+    border-width: 0;
+    background-color: #d74f57;
+    color: #f8d1ce;
+    margin-left: 6%;
+    border-radius: 2px;
+    margin-top: 25px;
+    }
+
+     /* Footer Section  */
+      
+
+      
+     .footer-container {
+            margin: 50px 0px 0px 157px;
+            width: 1219px;
+            height: 480px;
+            position: absolute;
+        }
+
+         .footer-container p {
+            font-weight: bold;
+            font-size: 19px;
+            margin: 0px 0px 0px 12px;
+        }
+
+         .footer-container img {
+            width: 106px;
+        }
+
+         .footer-container li {
+            list-style-type: none;
+            padding: 0px 0px 3px 13px;
+            font-size: 15px;
+            color: #3e3e52;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .hr {
+            width: 1202px;
+            margin: 21px 0px 0px 10px;
+        }
+        .i{
+            padding: 0px 0px 0px 0px;
+        }
+        .bigbox{
+            background-color: #f7f7f7;
+            width: 100%;
+            height: 520px;
+            margin: 200px 0px 0px 0px;
+        }
+
+</style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+ <!-- Header Section  -->
+ <div class="box1">
+    <a href="home.html"><img src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.svg" alt="" class="rblogo"></a>
+</div>
+<div class="vl"></div>
+<a href="home.html">
+    <div class="box2"><img src="redbuswhitelogo.png" alt="">
+        <p>Bus Tickets</p>
+    </div>
+</a>
+<a href="train.html">
+    <div class="box3"><img src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="">
+        <p>Train Tickets</p>
+    </div>
+</a>
+<a href="train.html">
+    <div class="off">
+        <p>₹60 off</p>
+    </div>
+</a>
+<a href="">
+    <div class="help"><img src="headphone.png" alt="">
+        <p>Help</p>
+    </div>
+</a>
+<div class="dropdown">
+    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+        style=" border: none;">
+        English
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">English</a></li>
+        <li><a class="dropdown-item" href="#">हिन्दी (Hindi)</a></li>
+        <li><a class="dropdown-item" href="#">தமிழ் (Tamil)</a></li>
+    </ul>
+</div>
+<div class="language"><img src="languageicon.png" alt=""></div>
+
+<div class="dropdown" style="margin-left: 150px;">
+    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+        style="width: 130px;">
+        Account
+    </button>
+    <ul class="dropdown-menu dropdown-menu-light" style="text-align: left;">
+        <li><a class="dropdown-item" href="cancelticket.html">Cancel Ticket</a></li>
+        <li><a class="dropdown-item" href="changetraveldate.html">Change Travel Date</a></li>
+        <li><a class="dropdown-item" href="showmyticket.html">Show My Ticket</a></li>
+        <li><a class="dropdown-item" href="emailsms.html">Email/SMS</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="login.html">Login/ Sign Up</a></li>
+    </ul>
+</div>
+<div class="account"><img src="usericon.png" alt=""></div>
+
+
+
+<div class="container">
+    <h1 class="heading">SMS AND EMAIL TICKET</h1>
+    <p class="para">Verify your details, and <span style="color: rgb(174, 35, 35);">EMAIL / SMS</span> your tickets</p>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="ticket-number">TICKET NUMBER</label>
+        <img src="ticket.png" alt="Ticket Icon" style="width: 30px; margin: 14px 0px 0px 26px; position: absolute; ">
+
+        <input type="text" id="ticket-number" name="ticket-number" placeholder="Enter your ticket number" required style="padding: 0px 0px 0px 40px;">
+      </div>
+      <div class="form-group">
+        <label for="mobile-number">MOBILE NUMBER</label>
+        <input type="text" id="mobile-number" name="mobile-number" placeholder="" required>
+        <select style="cursor: pointer; margin: 0px 0px 0px -268px; border: none; ">
+            <option>+91</option>
+          </select>
+      </div>
+      <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
+  </div>
+
+
+  
+  <!-- Footer Section  -->
+    
+
+<div class="bigbox">
+
+    <div class="footer-container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.svg" alt="">
+                <p
+                    style="font-weight: normal; font-size: 15px; color: #3e3e52; width: 246px; margin-top: 25px; margin-left: 0px;">
+                    redBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                    customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile
+                    apps for all major routes.</p>
+            </div>
+
+            <div class="col-md-2">
+                <ol>
+                    <p>About redBus</p>
+                    <a href="aboutus.html" style="text-decoration: none;"><li>About us</li></a>
+                    <li>Investor Relations</li>
+                    <a href="contactus.html" style="text-decoration: none;"><li>Contact us</li></a>
+                    <li>Mobile version</li>
+                    <li>redBus on mobile</li>
+                    <li>Sitemap</li>
+                    <li>Offers</li>
+                    <li>Careers</li>
+                    <li>Values</li>
+                </ol>
+            </div>
+
+
+            <div class="col-md-3">
+                <ol>
+                    <p>Info</p>
+                    <li>T&C</li>
+                    <li>Privacy policy</li>
+                    <li>FAQ</li>
+                    <li>Blog</li>
+                    <li>Bus operator registration</li>
+                    <li>Agent registration</li>
+                    <li>Insurance partner</li>
+                    <li>User agreement</li>
+                    <li>Primo Bus</li>
+                    <li>Bus Timetable</li>
+                </ol>
+            </div>
+
+
+            <div class="col-md-2">
+                <ol>
+                    <p>Global Sites</p>
+                    <li>India</li>
+                    <li>Sinapore</li>
+                    <li>Malaysia</li>
+                    <li>Indonesia</li>
+                    <li>Peru</li>
+                    <li>Colombia</li>
+                    <li>Cambodia</li>
+                    <li>Vietnam</li>
+                </ol>
+            </div>
+
+
+            <div class="col-md-2">
+                <ol>
+                    <p>Our Partners</p>
+                    <li>Goibibo Bus</li>
+                    <li>Goibibo Hotels</li>
+                    <li>Makemytrip Hotels</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="p">
+                <p style="font-weight: normal; font-size: 14px; margin-top: 14px;">Ⓒ 2025 Redbus India Pvt Ltd. All
+                    rights reserved</p>
+            </div>
+            <div class="i"><i class='fab fa-facebook-f' style="margin: -18px 0px 0px 1028px; position: absolute; font-size: 20px; cursor: pointer;"></i>
+                <i class='fab fa-linkedin-in' style="margin: -18px 0px 0px 1077px; position: absolute; font-size: 20px; cursor: pointer;"></i>
+                <i class='fab fa-twitter' style="margin: -18px 0px 0px 1127px; position: absolute; font-size: 20px; cursor: pointer;"></i>
+                <i class='fab fa-instagram' style="margin: -18px 0px 0px 1180px; position: absolute; font-size: 20px; cursor: pointer;"></i></div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>
