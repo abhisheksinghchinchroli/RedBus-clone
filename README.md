@@ -15,29 +15,32 @@ A pixel-accurate, fully responsive front-end clone of redBus.in — India's larg
 
 ## Live Demo
 
-🔗 **[Live Site](#)** — *(add your Netlify/Vercel URL here after deployment)*
+🔗 **[https://venerable-mandazi-a624aa.netlify.app](https://venerable-mandazi-a624aa.netlify.app)**
 
-> The project is fully static (no backend, no build step), so it deploys as-is to Netlify, Vercel, GitHub Pages, or any static host.
+Hosted on Netlify. The project is fully static (no backend, no build step), so every page deploys as-is.
 
 ---
 
 ## Screenshots
 
+<!--
+  Add the 4 files below to the /screenshots folder using these exact
+  filenames and the images will render automatically — no further
+  README edits needed. Capture guide:
+
+  1. home-desktop.png   — home.html, browser width ~1440px, hero banner + search bar visible
+  2. home-mobile.png    — home.html, device toolbar at ~390px width, header + stacked search fields
+  3. train-desktop.png  — train.html, ~1440px width, train search widget visible
+  4. login-desktop.png  — login.html, ~1440px width, full OTP sign-in modal
+-->
+
 | Home (Desktop) | Home (Mobile) |
 |---|---|
-| _placeholder — add `screenshots/home-desktop.png`_ | _placeholder — add `screenshots/home-mobile.png`_ |
+| ![Home page desktop view](screenshots/home-desktop.png) | ![Home page mobile view](screenshots/home-mobile.png) |
 
-| Train Booking | Login |
+| Train Booking (Desktop) | Login (Desktop) |
 |---|---|
-| _placeholder — add `screenshots/train-desktop.png`_ | _placeholder — add `screenshots/login-desktop.png`_ |
-
-> See [Screenshots & Demo Guide](#screenshots--demo-guide-for-contributors) below for the exact shots recommended for this section.
-
----
-
-## Demo Video
-
-🎥 **[Watch the walkthrough](#)** — *(add a 1–2 minute demo video link here — YouTube/Loom embed or GIF)*
+| ![Train booking desktop view](screenshots/train-desktop.png) | ![Login modal desktop view](screenshots/login-desktop.png) |
 
 ---
 
@@ -235,23 +238,3 @@ The redBus name, logo, and brand assets belong to their respective owner (redBus
 - [redBus.in](https://www.redbus.in/) — original design reference
 - [Bootstrap](https://getbootstrap.com/) — grid system and dropdown components
 - [Font Awesome](https://fontawesome.com/) — iconography
-
----
-
-## Screenshots & Demo Guide (for contributors)
-
-Recommended shots to capture and drop into a `screenshots/` folder before publishing:
-
-1. **Home — desktop** (full page or above-the-fold hero + search bar)
-2. **Home — mobile** (header + search stacked, showing the responsive reflow)
-3. **Train booking — desktop**
-4. **Login modal — desktop and mobile side by side**
-5. **FAQ accordion / offers carousel** (shows interactive detail)
-
-Recommended 1–2 minute demo video flow for recruiters:
-
-1. Start on the homepage (desktop width) — show the search bar and offers carousel.
-2. Resize the browser (or switch to device toolbar) down to mobile width live, showing the layout reflow in real time.
-3. Navigate to Train Tickets, then to the Login modal.
-4. Open the Account dropdown and briefly show one secondary page (e.g. Check PNR Status).
-5. End back on desktop width, showing the unmodified original design one more time as a callback.
