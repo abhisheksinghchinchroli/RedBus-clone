@@ -421,6 +421,74 @@
             margin: 1440px 0px 0px 0px;
             position: absolute;
         }
+
+        
+        @media (max-width: 1439.98px) {
+            body { text-align: center; overflow-x: hidden; margin: 0; }
+            .box1 { position: relative; height: auto; padding: 10px 0; text-align: center; }
+            .rblogo, .box2, .box3, .off, .help, .dropdown,
+            .language, .language img, .account, .account img {
+                position: static;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 6px 8px;
+                float: none;
+            }
+            
+            .vl { display: none; }
+            .dropdown button { position: static; margin: 0; }
+            .dropdown { margin: 6px 8px !important; }
+            .help { display: inline-flex; align-items: center; height: auto; width: auto; padding: 6px 10px; }
+            .help img { margin: 0; }
+            .help p { margin: 0 0 0 6px; }
+
+            .middle-container, .bigbox, .footer-container {
+                text-align: left;
+            }
+            .middle-container {
+                position: static;
+                width: 92%;
+                margin: 20px auto 40px;
+            }
+            .middle-container h1 { padding: 0 !important; text-align: center; }
+            .first, .second, .third { max-width: 100%; margin: 10px auto !important; }
+            .first p, .second p, .third p { padding: 10px 0 0 10px !important; }
+
+            .bigbox {
+                position: static;
+                height: auto;
+                width: 100%;
+                margin: 40px 0 0;
+            }
+            .footer-container {
+                position: static;
+                width: 92%;
+                height: auto;
+                margin: 20px auto;
+            }
+            .hr { width: 92%; margin: 10px auto; }
+            .i {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin: 16px 0;
+            }
+            .i i { position: static !important; margin: 0 !important; }
+            .footer-container img { width: 90px; }
+        }
+
+        @media (max-width: 991.98px) {
+            .box2, .box3 { height: 60px; width: 96px; }
+        }
+
+        @media (max-width: 767.98px) {
+            .rblogo { height: 36px; width: 58px; }
+            .box2, .box3 { height: 48px; width: 80px; }
+            .box2 p, .box3 p { font-size: 11px; margin: 2px 0 0 8px; }
+            .box2 img, .box3 img { height: 16px; width: 22px; margin: 8px 0 0 8px; }
+        }
     </style>
 </head>
 

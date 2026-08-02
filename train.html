@@ -508,6 +508,131 @@
             margin: 20px 100px 0px 0px;
             color: #fff;
         }
+
+        
+        @media (max-width: 1439.98px) {
+            body { overflow-x: hidden; margin: 0; }
+            
+            .box1 { position: relative; height: auto; padding: 10px 0; }
+            .box1 img { position: static; display: inline-block; vertical-align: middle; margin: 6px 8px; }
+            .box2 p, .box3 p.active, .box3 .hr, .help, .account {
+                position: static;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 6px 8px;
+                height: auto;
+            }
+
+            
+            .box4, .box4 *, .box5, .box5 *, .box6, .box6 *,
+            .box7, .box7 *, .box8, .box8 * {
+                position: static !important;
+                float: none !important;
+                width: auto !important;
+                max-width: 100% !important;
+                margin: 6px 0 !important;
+                left: auto !important;
+                top: auto !important;
+            }
+            
+            .box9, .box10, .box10a, .box11, .box12, .box13 {
+                display: none;
+            }
+            .box4, .box5, .box6, .box7, .box8 {
+                height: auto;
+                width: 94%;
+                margin: 16px auto !important;
+                padding: 16px;
+                box-sizing: border-box;
+            }
+            
+            .box5 p { padding-left: 0 !important; }
+            .box5 p[style*="font-size: 50px"] {
+                font-size: 26px !important;
+            }
+            .box5 p[style*="font-size: 20px"] { font-size: 16px !important; }
+            .box6a, .box6b, .box6c {
+                width: 100% !important;
+                display: block !important;
+                box-sizing: border-box;
+                margin: 8px 0 !important;
+                padding: 10px 16px;
+            }
+            .box6a p, .box6b p, .box6c p {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 !important;
+            }
+            .box6a input, .box6b input, .box6c input {
+                position: static !important;
+                flex-shrink: 0;
+                margin: 0 0 0 12px !important;
+            }
+            .box7 input {
+                width: 100% !important;
+                height: 56px !important;
+                box-sizing: border-box;
+            }
+            .box8 button {
+                display: block !important;
+                width: 100% !important;
+                height: 56px !important;
+            }
+
+            
+            p[style*="658px"] { position: static !important; margin: 20px auto !important; text-align: center; }
+            .box14, .box15, .box16 {
+                position: static;
+                min-width: 0;
+                max-width: 100%;
+                width: 90%;
+                margin: 16px auto !important;
+            }
+
+            
+            .box17, .box17 * {
+                position: static !important;
+                margin: 8px 0 !important;
+                width: auto !important;
+                max-width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            .box17 { height: auto; padding: 20px; }
+
+            
+            .download { height: auto; padding: 20px 0; }
+            .step1, .step2, .step3, .step4, .step5 {
+                width: 90%;
+                max-width: 500px;
+                margin: 12px auto !important;
+            }
+            img[src*="mob2_cont"] {
+                margin: 20px auto !important;
+                display: block;
+                max-width: 90%;
+                height: auto !important;
+            }
+
+            
+            .Frequently h1 {
+                padding: 40px 20px 0 !important;
+                text-align: center;
+                font-size: 1.5rem !important;
+            }
+            .Frequently p[style*="210px"] { padding: 16px 20px !important; }
+            .Frequently .hrline { width: 92%; margin: 16px auto; }
+
+            
+            .footer { height: auto; padding: 30px 16px; margin-top: 40px; }
+            .footer [style*="margin: 0px"] { margin: 0 !important; }
+            .footer .description, .footer .copyright { margin: 10px 0 !important; }
+        }
+
+        @media (max-width: 767.98px) {
+            .box2 p, .box3 p.active { font-size: 14px; }
+        }
     </style>
 </head>
 
