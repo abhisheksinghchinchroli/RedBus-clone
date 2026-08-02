@@ -1203,7 +1203,14 @@
         @media (max-width: 1439.98px) {
 
             
+            html { overflow-x: hidden; }
             body { text-align: center; overflow-x: hidden; margin: 0; }
+            /* If the Material Icons web font is ever slow/blocked to load,
+               this element falls back to rendering its raw text name
+               ("keyboard_arrow_down") instead of a small glyph. Keeping it
+               boxed and clipped means that fallback never visually breaks
+               the footer row it sits in. */
+            .material-icons { display: inline-block; overflow: hidden; white-space: nowrap; max-width: 24px; }
             .box1 { position: relative; height: auto; padding: 10px 0; text-align: center; }
             .rblogo, .box2, .box3, .off, .help, .dropdown,
             .language, .language img, .account, .account img {
