@@ -1197,14 +1197,192 @@
             padding: 0px 0px 0px 0px;
         }
 
-        
+        /* Project Demo section */
+        .demoSection {
+            width: 1193px;
+            margin: 60px 0px 0px 163px;
+            display: flex;
+            gap: 30px;
+            align-items: stretch;
+        }
 
-        
+        .demoSection-video {
+            flex: 0 0 480px;
+        }
+
+        .demoSection-playBtn {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 270px;
+            padding: 0;
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            background-color: #000;
+        }
+
+        .demoSection-poster {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.75;
+            display: block;
+        }
+
+        .demoSection-playIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            border-radius: 50%;
+            background-color: #d84e55;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            padding-left: 4px;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.35);
+        }
+
+        .demoSection-playLabel {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: rgba(0, 0, 0, 0.55);
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+        .demoSection-caption {
+            margin: 12px 0px 0px 0px;
+            font-size: 14px;
+            color: #3e3e52;
+            max-width: 480px;
+        }
+
+        .demoSection-info {
+            flex: 1;
+            background-color: #f7f7f7;
+            border-radius: 20px;
+            padding: 28px 32px;
+            box-sizing: border-box;
+        }
+
+        .demoSection-info h3 {
+            margin: 0px 0px 16px 0px;
+            font-size: 22px;
+            color: #1d1d1d;
+        }
+
+        .demoSection-highlights {
+            margin: 0px 0px 20px 0px;
+            padding-left: 20px;
+            color: #3e3e52;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+
+        .demoSection-links {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .demoSection-linkBtn {
+            display: inline-block;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d84e55;
+            color: #d84e55;
+            background-color: white;
+        }
+
+        .demoSection-linkBtn:hover {
+            background-color: #f7f7f7;
+        }
+
+        .demoSection-linkBtn--primary {
+            background-color: #d84e55;
+            color: white;
+        }
+
+        .demoSection-linkBtn--primary:hover {
+            background-color: #c43e45;
+        }
+
+        /* Demo video modal */
+        .demoModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .demoModal-content {
+            position: relative;
+            width: 900px;
+            max-width: 92vw;
+        }
+
+        .demoModal-videoWrap video {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+            border-radius: 8px;
+            background-color: #000;
+        }
+
+        .demoModal-close {
+            position: absolute;
+            top: -42px;
+            right: 0px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            line-height: 1;
+            padding: 4px 8px;
+        }
+
+
+
+
         @media (max-width: 1439.98px) {
 
             
             html { overflow-x: hidden; }
             body { text-align: center; overflow-x: hidden; margin: 0; }
+
+            .demoSection {
+                width: 94%;
+                margin: 40px auto 0;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .demoSection-video { flex: none; }
+            .demoSection-playBtn { height: 320px; }
+            .demoSection-caption { max-width: 100%; }
+
             /* If the Material Icons web font is ever slow/blocked to load,
                this element falls back to rendering its raw text name
                ("keyboard_arrow_down") instead of a small glyph. Keeping it
@@ -1415,6 +1593,9 @@
             .box5 input { font-size: 14px; }
             .container1, .container2 { width: 96%; }
             .box14, .box15, .box16, .box17 { width: 94%; }
+            .demoSection { width: 96%; }
+            .demoSection-playBtn { height: 260px; }
+            .demoSection-info { padding: 24px; }
         }
 
         
@@ -1431,6 +1612,13 @@
             .box19 .container .col-md-3, .box19 .container .col-md-2 {
                 text-align: center;
             }
+            .demoSection { width: 92%; margin: 30px auto 0; }
+            .demoSection-playBtn { height: 200px; }
+            .demoSection-info { padding: 20px; }
+            .demoSection-info h3 { font-size: 19px; }
+            .demoSection-highlights { font-size: 14px; line-height: 1.8; }
+            .demoSection-linkBtn { padding: 9px 18px; font-size: 13px; }
+            .demoModal-close { top: -36px; font-size: 28px; }
         }
     </style>
 </head>
@@ -1531,7 +1719,59 @@
     <!-- bus get out  -->
     <div class="box11"><img src="busgetoutlogo.png" alt=""></div>
 
+    <!-- Project Demo section -->
+    <div class="demoSection">
+        <div class="demoSection-video">
+            <button type="button" class="demoSection-playBtn" onclick="openDemoModal()" aria-label="Watch project demo video">
+                <img src="screenshots/home-desktop.png" alt="RedBus clone demo video thumbnail" class="demoSection-poster">
+                <span class="demoSection-playIcon">&#9654;</span>
+                <span class="demoSection-playLabel">&#9654; Watch Demo</span>
+            </button>
+            <p class="demoSection-caption">A quick walkthrough of the RedBus clone showcasing the booking flow, responsive design, and implemented features.</p>
+        </div>
+        <div class="demoSection-info">
+            <h3>Project Demo &amp; Highlights</h3>
+            <ul class="demoSection-highlights">
+                <li>Fully responsive design — desktop, tablet, and mobile</li>
+                <li>Bus &amp; train ticket booking flow</li>
+                <li>11 functional pages — search, login, cancel ticket, PNR status, and more</li>
+                <li>Built with HTML, CSS, Bootstrap, and JavaScript</li>
+                <li>Deployed on Netlify with GitHub continuous deployment</li>
+            </ul>
+            <div class="demoSection-links">
+                <a href="https://github.com/abhisheksinghchinchroli/RedBus-clone" target="_blank" rel="noopener" class="demoSection-linkBtn">View on GitHub</a>
+                <a href="https://venerable-mandazi-a624aa.netlify.app" target="_blank" rel="noopener" class="demoSection-linkBtn demoSection-linkBtn--primary">Live Demo</a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Demo video modal -->
+    <div id="demoModal" class="demoModal" onclick="if (event.target === this) closeDemoModal();">
+        <div class="demoModal-content">
+            <button type="button" class="demoModal-close" onclick="closeDemoModal()" aria-label="Close video">&times;</button>
+            <div id="demoModal-videoWrap" class="demoModal-videoWrap"></div>
+        </div>
+    </div>
+
+    <script>
+        function openDemoModal() {
+            var wrap = document.getElementById('demoModal-videoWrap');
+            wrap.innerHTML = '<video src="redbus-demo.mp4" controls playsinline></video>';
+            document.getElementById('demoModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDemoModal() {
+            var wrap = document.getElementById('demoModal-videoWrap');
+            wrap.innerHTML = '';
+            document.getElementById('demoModal').style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeDemoModal();
+        });
+    </script>
 
     <!-- image slider section 1  -->
     <div class="container1">
