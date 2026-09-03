@@ -1,7 +1,3 @@
-
-
-https://github.com/user-attachments/assets/0f9ef34c-7ce4-4c7a-9447-79659c0940c3
-
 # RedBus Clone
 
 A pixel-accurate, fully responsive front-end clone of redBus.in — India's largest online bus and train ticketing platform. Built with plain HTML5, CSS3 and vanilla JavaScript, with no build tooling required to run it.
@@ -24,8 +20,8 @@ A pixel-accurate, fully responsive front-end clone of redBus.in — India's larg
 Hosted on Netlify. The project is fully static (no backend, no build step), so every page deploys as-is.
 
 ---
-## 🎥 Project Demo
 
+## 🎥 Project Demo
 
 https://github.com/user-attachments/assets/d33f5c76-16bf-498e-96c1-847214155297
 
@@ -51,10 +47,6 @@ https://github.com/user-attachments/assets/d33f5c76-16bf-498e-96c1-847214155297
 | Train Booking (Desktop) | Login (Desktop) |
 |---|---|
 | ![Train booking desktop view](screenshots/train-desktop.png) | ![Login modal desktop view](screenshots/login-desktop.png) |
-
----
-
-
 
 ---
 
