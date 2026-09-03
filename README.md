@@ -44,13 +44,26 @@ Hosted on Netlify. The project is fully static (no backend, no build step), so e
 
 ---
 
-## Demo Video
-
-[![Watch the demo video](screenshots/home-desktop.png)](redbus-demo.mp4)
-
-**[▶ Watch the demo video](redbus-demo.mp4)** — click the thumbnail above or this link; GitHub plays it directly in the browser, no download needed.
+## 🎥 Project Demo
 
 A quick walkthrough of the RedBus clone showcasing the booking flow, responsive design, and implemented features.
+
+<!--
+  MAINTAINER NOTE — replace this comment with the actual video, playable
+  inline on GitHub:
+
+  1. Open this file on github.com and click the pencil (Edit) icon.
+  2. Click on this exact line (inside the raw markdown editor).
+  3. Drag RedBus_Demo_Professional_Final_v3.mp4 from your computer into
+     the editor at this spot (or use the paperclip / "Attach files" button).
+  4. GitHub uploads it and auto-inserts a line that looks like:
+       https://github.com/user-attachments/assets/xxxxxxxx-xxxx-...
+     Leave that line exactly as GitHub inserts it - do not edit the URL.
+  5. Delete this comment block, then commit directly to `main`.
+
+  Once done, GitHub renders a native inline video player right here,
+  playable without leaving the README or downloading anything.
+-->
 
 ---
 
