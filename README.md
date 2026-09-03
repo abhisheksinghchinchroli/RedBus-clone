@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/0f9ef34c-7ce4-4c7a-9447-79659c0940c3
+
 # RedBus Clone
 
 A pixel-accurate, fully responsive front-end clone of redBus.in — India's largest online bus and train ticketing platform. Built with plain HTML5, CSS3 and vanilla JavaScript, with no build tooling required to run it.
@@ -18,6 +22,12 @@ A pixel-accurate, fully responsive front-end clone of redBus.in — India's larg
 🔗 **[https://venerable-mandazi-a624aa.netlify.app](https://venerable-mandazi-a624aa.netlify.app)**
 
 Hosted on Netlify. The project is fully static (no backend, no build step), so every page deploys as-is.
+
+---
+## 🎥 Project Demo
+
+
+https://github.com/user-attachments/assets/d33f5c76-16bf-498e-96c1-847214155297
 
 ---
 
@@ -44,26 +54,7 @@ Hosted on Netlify. The project is fully static (no backend, no build step), so e
 
 ---
 
-## 🎥 Project Demo
 
-A quick walkthrough of the RedBus clone showcasing the booking flow, responsive design, and implemented features.
-
-<!--
-  MAINTAINER NOTE — replace this comment with the actual video, playable
-  inline on GitHub:
-
-  1. Open this file on github.com and click the pencil (Edit) icon.
-  2. Click on this exact line (inside the raw markdown editor).
-  3. Drag RedBus_Demo_Professional_Final_v3.mp4 from your computer into
-     the editor at this spot (or use the paperclip / "Attach files" button).
-  4. GitHub uploads it and auto-inserts a line that looks like:
-       https://github.com/user-attachments/assets/xxxxxxxx-xxxx-...
-     Leave that line exactly as GitHub inserts it - do not edit the URL.
-  5. Delete this comment block, then commit directly to `main`.
-
-  Once done, GitHub renders a native inline video player right here,
-  playable without leaving the README or downloading anything.
--->
 
 ---
 
