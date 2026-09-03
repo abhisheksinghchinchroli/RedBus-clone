@@ -44,6 +44,16 @@ Hosted on Netlify. The project is fully static (no backend, no build step), so e
 
 ---
 
+## Demo Video
+
+[![Watch the demo video](screenshots/home-desktop.png)](redbus-demo.mp4)
+
+**[▶ Watch the demo video](redbus-demo.mp4)** — click the thumbnail above or this link; GitHub plays it directly in the browser, no download needed.
+
+A quick walkthrough of the RedBus clone showcasing the booking flow, responsive design, and implemented features.
+
+---
+
 ## Project Summary
 
 This project is a front-end recreation of redBus's booking experience, covering the bus-search homepage, train ticketing flow, and the account-management pages (cancel ticket, change travel date, check PNR status, email/SMS ticket, print ticket) that a real booking platform needs. It started as a pixel-for-pixel desktop clone and was later reworked page-by-page to be fully responsive across mobile, tablet, laptop, and desktop viewports — without changing the original visual design, layout, or functionality.
